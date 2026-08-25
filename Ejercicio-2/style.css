@@ -1,0 +1,79 @@
+*{
+    /* elimino margenes*/
+    margin: 0;
+    /* elimino el relleno*/
+    padding: 0;
+    /* evito que el ancho se sume al relleno*/
+    box-sizing: border-box;
+}
+/* Estilos Generales y Contenedores */
+/* selector a partir de nombre*/
+
+body{
+    /* fondo */
+    background: url(Assets/imagen-back.jpg) center 0 no-repeat;
+    background-size: cover;
+}
+
+main{
+    /* Configuracion del ancho*/
+    width: 100%;
+    max-width: 800px;
+    /* Centrar el contenedor */
+    /* margin: top right bottom left */
+    margin: 0 auto 0 auto;
+    background: rgba(109, 2, 43, 0.724);
+    /* Relleno: top right, bottom, left */
+    padding: 0 20px 0 20px;
+}
+
+img{
+    /* Configurar el ancho al 100%*/
+    width: 100%;
+}
+
+/* Estilos de texto*/
+h1{
+    /* familia tipográfica */
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  /* color de fuente */
+  color: rgb(103, 6, 43);
+  /* alinear texto al centro*/
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+p{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: aliceblue;
+  /* Alinear Justificado*/
+  text-align: justify;
+  /* margen: top right bottom left;*/
+  margin: 20px 0 20px 0;
+}
+
+/* Seleccion etiqueta por clase*/
+.subtitulo-pf{
+    /* familia tipográfica */
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  /* color de fuente */
+  color: rgb(163, 3, 64);
+}
+
+/* Seleccion por id */
+#parrafo-destacaadoo{
+    /* color de fuente*/
+    color: rgb(98, 4, 40) !important;
+    font-weight: 500;
+}
+
