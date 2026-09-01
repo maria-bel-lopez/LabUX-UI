@@ -1,0 +1,123 @@
+/*
+0. Selectores generales
+1. Tipografia
+2. Cabecera
+
+/*
+
+/* 0. Selectores generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Evita que el ancho se sume al padding*/
+}
+
+:root{
+    --color-principal: #2B6E73;
+    --color-acento: #732B6E;
+    --color-acento2: #6E732B;
+    --color-texto: #2a2a2a;
+}
+
+.hide-element{
+    display: none;
+}
+
+.flex-elements{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+/* 1. Tipografia*/
+h1{
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: var(--color-principal);
+}
+
+h2{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color: var(--color-acento);
+}
+
+h3{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color: var(--color-acento);
+}
+
+p{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: var(--color-texto);
+    text-align: justify;
+}
+
+/* 2. Cabecera*/
+#cabecera-web{
+
+    /*Relleno interno*/
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border-bottom: grosor estilo color*/
+    border-bottom: 3px solid var(--color-principal);
+}
+
+.bt-principal{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background: var(--color-principal);
+    padding: 8px 15px;
+    border-radius: 6px;
+    /*animacion por transicion: duracion caracteristica animacion */
+    transition: 0.3s  all linear;
+}
+
+.bt-principal:hover{
+    background: var(--color-acento);
+    padding: 8px 20px;
+}
+
+/* ================================== */
+@media (max-width: 600px) {
+    #cabecera-web{
+        flex-direction: column;
+    }
+
+    #cabecera-web > nav{
+        width: 100%;
+    }
+
+    .bt-principal {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 0%;
+        border-bottom: 0.8px solid var(--color-acento);
+    }
+}
